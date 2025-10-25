@@ -10,7 +10,7 @@ Tech Stack
 - CSS3 – styling, animations, and responsive layout  
 - Vanilla JS – logic for showing bands, palettes, and interactions  
 
-Bands Included: 
+Bands Included:
 The Smiths, Radiohead, Nirvana, Cigarettes After Sex, The Beatles, The Neighbourhood, Queen, One Direction, The Cranberries, BoA
 
 Created by Selamawit.
