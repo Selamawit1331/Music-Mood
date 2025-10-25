@@ -2,7 +2,7 @@ Bandaesthetics 🎵
 
 A fun web app that shows a band’s “moodboard” . A short personality, aesthetic description, and color palette based on your favorite bands.
 
-How to Use
+How to Use:
 Open `bandaesthetics.html` in your browser, choose from the option or click a suggested band to see its vibe. You can also copy the moodboard text to share.
 
 Tech Stack
