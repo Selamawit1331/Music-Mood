@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MusicMood — Your band, your personality</title>
+    <link rel="stylesheet" href="bandaesthetics.css" />
+    <style></style>
+  </head>
+  <body>
+    <main class="app" role="main">
+      <header>
+        <div class="logo">MM</div>
+        <div>
+          <h1>MusicMood: your band, your personality</h1>
+          <p class="lead">
+            Type or pick a band and get an aesthetic, a short personality, and a
+            palette. Make it yours.
+          </p>
+        </div>
+      </header>
+
+      <section class="panel" aria-labelledby="controls">
+        <div id="controls">
+          <label for="bandInput">Pick a band</label>
+          <div class="input-wrap">
+            <input
+              id="bandInput"
+              type="text"
+              placeholder="e.g. The Smiths, Radiohead, Nirvana"
+              list="bands"
+            />
+            <datalist id="bands"></datalist>
+            <button id="showBtn" class="btn">Reveal me ✨</button>
+          </div>
+          <p class="small">
+            Tip: you can click suggested bands below. Results are handcrafted to
+            feel like a moodboard, not a scientific test.
+          </p>
+        </div>
+
+        <div style="margin-top: 12px">
+          <div class="small">Suggested bands</div>
+          <div class="saved" id="suggestions"></div>
+        </div>
+
+        <div style="margin-top: 14px">
+          <div class="small">Saved results</div>
+          <div class="saved" id="savedList"></div>
+        </div>
+      </section>
+
+      <section class="preview" aria-live="polite">
+        <div id="resultCard" class="result-appear" style="display: none">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: start;
+              gap: 12px;
+            "
+          >
+            <div>
+              <h2 class="band-name" id="bandName">Band name</h2>
+              <div class="meta" id="bandMeta">— aesthetic · song</div>
+            </div>
+            <div style="text-align: right">
+              <div class="muted">Share</div>
+              <div style="display: flex; gap: 8px; margin-top: 6px">
+                <button id="copyBtn" class="chip">Copy</button>
+                <button id="saveBtn" class="chip">Save</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="palette" id="palette"></div>
+          <p class="desc" id="bandDesc">
+            Personality description will appear here. It should be short,
+            poetic, and match the band's vibe.
+          </p>
+
+          <div class="actions">
+            <div class="muted">
+              Want a different feel? try another band or press suggestions.
+            </div>
+          </div>
+        </div>
+
+        <div id="empty" style="text-align: center; color: #9aa0c9">
+          <svg
+            width="120"
+            height="120"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 2v2M20 12h2M12 20v2M2 12H0M4.2 4.2L5.6 5.6M18.4 18.4l1.4 1.4M4.2 19.8L5.6 18.4M18.4 5.6l1.4-1.4"
+              stroke="#8f93b3"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p style="margin-top: 8px">
+            No mood yet — try a band or click a suggestion to get started.
+          </p>
+        </div>
+      </section>
+
+      <footer>Made by Selamawit✨</footer>
+    </main>
+
+    <script src="bandaesthetics.js"></script>
+  </body>
+</html>
